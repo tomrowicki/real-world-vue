@@ -3,7 +3,7 @@
     <div class="event-header">
       <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
       <h1 class="title">{{ event.title }}</h1>
-      <h5>Organized by {{ event.organizer }}</h5>
+      <h5>Organized by {{ event.organizer ? event.organizer.name : '' }}</h5>
       <h5>Category: {{ event.category }}</h5>
     </div>
     <BaseIcon name="map"><h2>Location</h2></BaseIcon>
@@ -30,7 +30,12 @@
 <script>
 import EventService from '@/services/EventService.js'
 export default {
-  props: ['id'],
+  props: {
+    id: {
+      type: String,
+      default: ''
+    }
+  },
   data() {
     return {
       event: {}

@@ -71,6 +71,34 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 6427849,
+      "category": "education",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Working?",
+      "description": "hmm",
+      "location": "here",
+      "date": "2019-05-01T17:58:00.000Z",
+      "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 7089601,
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Planting trees",
+      "description": "",
+      "location": "",
+      "date": "2019-05-02T18:19:00.000Z",
+      "time": "15:00",
+      "attendees": []
     }
   ]
 }
